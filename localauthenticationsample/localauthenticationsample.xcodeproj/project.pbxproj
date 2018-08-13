@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12A0F50B2113E21800E207A8 /* Local Authentication Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Local Authentication Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A0F50B2113E21800E207A8 /* Authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A0F50E2113E21800E207A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A0F5102113E21800E207A8 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		12A0F5132113E21800E207A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		12A0F50C2113E21800E207A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12A0F50B2113E21800E207A8 /* Local Authentication Sample.app */,
+				12A0F50B2113E21800E207A8 /* Authentication.app */,
 				12A0F51F2113E21A00E207A8 /* localauthenticationsampleTests.xctest */,
 			);
 			name = Products;
@@ -79,13 +79,12 @@
 		12A0F50D2113E21800E207A8 /* localauthenticationsample */ = {
 			isa = PBXGroup;
 			children = (
+				12A0F51A2113E21A00E207A8 /* Info.plist */,
 				12A0F50E2113E21800E207A8 /* AppDelegate.swift */,
 				12A0F5102113E21800E207A8 /* SampleViewController.swift */,
 				12A0F5312115180000E207A8 /* Biometrics.swift */,
 				12A0F5122113E21800E207A8 /* Main.storyboard */,
-				12A0F5152113E21A00E207A8 /* Assets.xcassets */,
-				12A0F5172113E21A00E207A8 /* LaunchScreen.storyboard */,
-				12A0F51A2113E21A00E207A8 /* Info.plist */,
+				12B4DDFA2122270100FB96A2 /* Supporting Files */,
 			);
 			path = localauthenticationsample;
 			sourceTree = "<group>";
@@ -96,6 +95,15 @@
 				12A0F52F2113E24200E207A8 /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12B4DDFA2122270100FB96A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A0F5172113E21A00E207A8 /* LaunchScreen.storyboard */,
+				12A0F5152113E21A00E207A8 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,7 +123,7 @@
 			);
 			name = localauthenticationsample;
 			productName = localauthenticationsample;
-			productReference = 12A0F50B2113E21800E207A8 /* Local Authentication Sample.app */;
+			productReference = 12A0F50B2113E21800E207A8 /* Authentication.app */;
 			productType = "com.apple.product-type.application";
 		};
 		12A0F51E2113E21A00E207A8 /* localauthenticationsampleTests */ = {
@@ -296,6 +304,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Authentication;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -349,6 +358,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Authentication;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -368,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsample;
-				PRODUCT_NAME = "Local Authentication Sample";
+				PRODUCT_NAME = $inherited;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsample;
-				PRODUCT_NAME = "Local Authentication Sample";
+				PRODUCT_NAME = $inherited;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

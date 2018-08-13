@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SampleViewController.swift
 //  localauthenticationsample
 //
 //  Created by Steven Warren on 03/08/2018.
@@ -177,7 +177,6 @@ extension SampleViewController: UITextFieldDelegate {
 
 extension SampleViewController {
     fileprivate func updateViewState(animated: Bool = true) {
-        let duration = authenticated ? 1 : 0.25
         let targetAlpha: CGFloat = authenticated ? 1 : 0
         let updates = {
             if self.authenticated {
@@ -191,7 +190,7 @@ extension SampleViewController {
             self.view.layoutIfNeeded()
         }
         guard animated else { return updates() }
-        UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: updates)
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: updates)
     }
 }
 

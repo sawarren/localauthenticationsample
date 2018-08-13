@@ -1,5 +1,5 @@
 //
-//  BiometricAuthentication.swift
+//  Biometrics.swift
 //  localauthenticationsample
 //
 //  Created by Steven Warren on 04/08/2018.
@@ -13,7 +13,7 @@ typealias KeychainError = Biometrics.Keychain.KeychainError
 
 struct Biometrics {
     
-    // MARK: - Biometric Authentication
+    // MARK: - Biometric Authentication -
     
     class Authentication {
         
@@ -141,7 +141,7 @@ struct Biometrics {
         }
     }
     
-    // MARK: - Secure Keychain Access
+    // MARK: - Secure Keychain Access -
     
     struct Keychain {
         
