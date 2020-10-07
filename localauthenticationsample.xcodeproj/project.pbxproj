@@ -16,16 +16,6 @@
 		12A0F5322115180000E207A8 /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A0F5312115180000E207A8 /* Biometrics.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		12A0F5202113E21A00E207A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12A0F5032113E21800E207A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 12A0F50A2113E21800E207A8;
-			remoteInfo = localauthenticationsample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		12A0F50B2113E21800E207A8 /* Authentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A0F50E2113E21800E207A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +24,6 @@
 		12A0F5152113E21A00E207A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A0F5182113E21A00E207A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A0F51A2113E21A00E207A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12A0F51F2113E21A00E207A8 /* localauthenticationsampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localauthenticationsampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A0F52F2113E24200E207A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		12A0F5312115180000E207A8 /* Biometrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,13 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A0F5302113E24200E207A8 /* Security.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A0F51C2113E21A00E207A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				12A0F50B2113E21800E207A8 /* Authentication.app */,
-				12A0F51F2113E21A00E207A8 /* localauthenticationsampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,24 +107,6 @@
 			productReference = 12A0F50B2113E21800E207A8 /* Authentication.app */;
 			productType = "com.apple.product-type.application";
 		};
-		12A0F51E2113E21A00E207A8 /* localauthenticationsampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 12A0F52B2113E21A00E207A8 /* Build configuration list for PBXNativeTarget "localauthenticationsampleTests" */;
-			buildPhases = (
-				12A0F51B2113E21A00E207A8 /* Sources */,
-				12A0F51C2113E21A00E207A8 /* Frameworks */,
-				12A0F51D2113E21A00E207A8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				12A0F5212113E21A00E207A8 /* PBXTargetDependency */,
-			);
-			name = localauthenticationsampleTests;
-			productName = localauthenticationsampleTests;
-			productReference = 12A0F51F2113E21A00E207A8 /* localauthenticationsampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,15 +114,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = conduit;
 				TargetAttributes = {
 					12A0F50A2113E21800E207A8 = {
 						CreatedOnToolsVersion = 9.4.1;
-					};
-					12A0F51E2113E21A00E207A8 = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 12A0F50A2113E21800E207A8;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -177,7 +137,6 @@
 			projectRoot = "";
 			targets = (
 				12A0F50A2113E21800E207A8 /* localauthenticationsample */,
-				12A0F51E2113E21A00E207A8 /* localauthenticationsampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,13 +149,6 @@
 				12A0F5192113E21A00E207A8 /* LaunchScreen.storyboard in Resources */,
 				12A0F5162113E21A00E207A8 /* Assets.xcassets in Resources */,
 				12A0F5142113E21800E207A8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		12A0F51D2113E21A00E207A8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,22 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12A0F51B2113E21A00E207A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		12A0F5212113E21A00E207A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 12A0F50A2113E21800E207A8 /* localauthenticationsample */;
-			targetProxy = 12A0F5202113E21A00E207A8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		12A0F5122113E21800E207A8 /* Main.storyboard */ = {
@@ -276,6 +213,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -301,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Authentication;
@@ -337,6 +275,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -356,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Authentication;
 				SDKROOT = iphoneos;
@@ -379,7 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsample;
 				PRODUCT_NAME = $inherited;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,50 +336,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsample;
 				PRODUCT_NAME = $inherited;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		12A0F52C2113E21A00E207A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ4BNYBY5Y;
-				INFOPLIST_FILE = localauthenticationsampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/localauthenticationsample.app/localauthenticationsample";
-			};
-			name = Debug;
-		};
-		12A0F52D2113E21A00E207A8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQ4BNYBY5Y;
-				INFOPLIST_FILE = localauthenticationsampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.conduit.localauthenticationsampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/localauthenticationsample.app/localauthenticationsample";
 			};
 			name = Release;
 		};
@@ -461,15 +358,6 @@
 			buildConfigurations = (
 				12A0F5292113E21A00E207A8 /* Debug */,
 				12A0F52A2113E21A00E207A8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		12A0F52B2113E21A00E207A8 /* Build configuration list for PBXNativeTarget "localauthenticationsampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				12A0F52C2113E21A00E207A8 /* Debug */,
-				12A0F52D2113E21A00E207A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
